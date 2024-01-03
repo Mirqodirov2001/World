@@ -1,8 +1,9 @@
 import './style.scss'
 import Image from 'next/image'
 import React from 'react'
-import img1 from '../../../assets/icons/1.svg'
-import user from '../../../assets/icons/people.svg'
+import img1 from '../../assets/icons/1.svg'
+import user from '../../assets/icons/people.svg'
+import Date from '@/components/UI/DatePicerMobile'
 
 const index = () => {
   return (
@@ -20,16 +21,8 @@ const index = () => {
               placeholder='Search destinations, hotels'
             />
           </div>
-          <div className=' check mt-[16px] flex justify-between'>
-            <div className=' flex'>
-              <Image className=' ml-2' src={img1} alt='img' />
-              <p className=' ml-2'>Check in</p>
-            </div>
-            <p>∣</p>
-            <div className=' flex'>
-              <Image src={img1} alt='img' />
-              <p className=' ml-2 mr-2'>Check out</p>
-            </div>
+          <div className=' check mt-[16px] flex justify-center'>
+            <Date />
           </div>
           <div className=' check mt-[16px] flex justify-center'>
             <Image src={user} alt='user img' />

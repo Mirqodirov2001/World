@@ -1,20 +1,6 @@
-.text {
-  position: relative;
+.text:hover {
   cursor: pointer;
-  &::after {
-    content: '';
-    background-color: #ffffff;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    transform: scale(0);
-    height: 2px;
-    width: 100%;
-    transition: all 0.3s ease;
-  }
-  &:hover::after {
-    transform: scale(1);
-  }
+  color: rgb(0, 89, 255);
 }
 
 @media screen and (max-width: '767px'), (max-width: '375px') {
@@ -38,21 +24,9 @@
       column-gap: 20px;
     }
     .text {
-      &::after {
-        position: relative;
+      &:hover {
         cursor: pointer;
-        content: '';
-        background-color: #0099ff;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        transform: scale(0);
-        height: 2px;
-        width: 100%;
-        transition: all 0.3s ease;
-      }
-      &:hover::after {
-        transform: scale(1);
+        color: rgb(0, 89, 255);
       }
     }
   }

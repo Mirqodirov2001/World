@@ -2,7 +2,8 @@ import './style.scss'
 import Image from 'next/image'
 import img1 from '../../assets/icons/1.svg'
 import user from '../../assets/icons/people.svg'
-import SearchMobile from '@/components/UI/Search'
+import SearchMobile from '@/components/SearchMobile'
+import DatePicerDesktop from '@/components/UI/DatePicerDesktop'
 const index = () => {
   return (
     <>
@@ -24,18 +25,7 @@ const index = () => {
                   </div>
                   <div>
                     <ul className=' srm flex items-center ml-[190px] gap-12'>
-                      <li className=' flex gap-1 cursor-pointer '>
-                        <Image src={img1} alt='img' />
-                        <p className="text-[16px] font-['Helvetica'] font-normal text-[#fff] opacity-70 hover:text-[#625deb]">
-                          Check in
-                        </p>
-                      </li>
-                      <li className='flex gap-1'>
-                        <Image src={img1} alt='img' />
-                        <p className="text-[16px] font-['Helvetica'] font-normal text-[#fff] opacity-70  cursor-pointer hover:text-[#625deb]">
-                          Check out
-                        </p>
-                      </li>
+                      <DatePicerDesktop />
                       <li className='flex gap-1'>
                         <Image className=' -mt-1' src={user} alt='user img' />
                         <p className="text-[16px] font-['Helvetica'] font-normal text-[#fff] opacity-70 cursor-pointer hover:text-[#625deb]">

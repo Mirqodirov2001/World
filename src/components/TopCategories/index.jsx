@@ -16,13 +16,13 @@ const index = () => {
               <div className='gap flex items-center justify-center mt-1 gap-10'>
                 <div>
                   <Image className=' ml-2 mb-1' src={hotels} alt='hotels img' />
-                  <p className="text text-[#888888] opacity-100 text-[18px] text-['Helvetica'] font-normal">
+                  <p className="text text-[#888888] text-[18px] text-['Helvetica'] font-normal">
                     <Link href='/hotels'>Hotels</Link>
                   </p>
                 </div>
                 <div>
                   <Image className=' ml-2 mb-1' src={tours} alt='tours img' />
-                  <p className="text text-[#888888] opacity-100 text-[18px] text-['Helvetica'] font-normal">
+                  <p className="text text-[#888888] text-[18px] text-['Helvetica'] font-normal">
                     <Link href='/tours'>Tours</Link>
                   </p>
                 </div>
