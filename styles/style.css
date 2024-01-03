@@ -1,3 +1,28 @@
-.ant-picker-dropdown button {
-  background-color: aqua;
+.text:hover {
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 767px), (max-width: 375px) {
+  #top h1 {
+    font-size: 24px !important;
+    color: black;
+    padding-top: 16px;
+  }
+  #top p {
+    font-size: 14px;
+  }
+  #top img {
+    margin-left: 4px;
+  }
+  #top .img {
+    margin-left: 5px;
+  }
+  #top .gap {
+    column-gap: 20px;
+  }
+  #top .text:hover {
+    cursor: pointer;
+    color: rgb(0, 89, 255);
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -33,7 +33,7 @@ const App = () => {
         </div>
         <div>
           <span onClick={toggleDrawer}>
-            <Image src={menu} alt='menu img' />
+            <Image className=' cursor-pointer' src={menu} alt='menu img' />
           </span>
           <Drawer
             open={isOpen}

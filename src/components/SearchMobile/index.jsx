@@ -2,7 +2,7 @@ import './style.scss'
 import Image from 'next/image'
 import React from 'react'
 import img1 from '../../assets/icons/1.svg'
-import user from '../../assets/icons/people.svg'
+import user from '../../assets/icons/people2.svg'
 import Date from '@/components/UI/DatePicerMobile'
 
 const index = () => {
@@ -28,7 +28,7 @@ const index = () => {
             <Image src={user} alt='user img' />
             <p className=''>1 room, 2 adults</p>
           </div>
-          <div className=' sr check mt-[16px]'>
+          <div className=' sr check mt-[16px] cursor-pointer'>
             <p>Search</p>
           </div>
         </div>
