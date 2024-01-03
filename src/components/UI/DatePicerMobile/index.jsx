@@ -1,25 +1,39 @@
 'use client'
 import React from 'react'
-import "./style.scss"
+import dayjs from 'dayjs'
 import { DatePicker, Space } from 'antd'
 const { RangePicker } = DatePicker
-const onChange = (value, dateString) => {
- 
+const onChange = date => {
+  if (date) {
+  } else {
+  }
 }
-const onOk = value => {
-
+const onRangeChange = (dates, dateStrings) => {
+  if (dates) {
+  } else {
+  }
 }
+const rangePresets = [
+  {
+    label: 'Last 7 Days',
+    value: [dayjs().add(-7, 'd'), dayjs()]
+  },
+  {
+    label: 'Last 14 Days',
+    value: [dayjs().add(-14, 'd'), dayjs()]
+  },
+  {
+    label: 'Last 30 Days',
+    value: [dayjs().add(-30, 'd'), dayjs()]
+  },
+  {
+    label: 'Last 90 Days',
+    value: [dayjs().add(-90, 'd'), dayjs()]
+  }
+]
 const App = () => (
   <Space direction='vertical' size={12}>
-    <RangePicker
-      showTime={{
-        format: 'HH:mm'
-      }}
-      format='YYYY-MM-DD HH:mm'
-      onChange={onChange}
-      onOk={onOk}
-      bordered={false}
-    />
+    <RangePicker presets={rangePresets} onChange={onRangeChange} bordered={false} />
   </Space>
 )
 export default App
